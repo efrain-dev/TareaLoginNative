@@ -22,12 +22,21 @@ These components make use of the NativeScript core theme, which styles them with
 The theme also provides a set of helper class names such as p-20, h1, h2, and text-center to enhance styling.
 You can learn more about the NativeScript core theme at https://github.com/nativescript/theme
 -->
-<GridLayout>
-  <ListView [items]="items">
-    <ng-template let-item="item">
-      <StackLayout [nsRouterLink]="['/item', item.id]">
-        <Label [text]="item.name"></Label>
-      </StackLayout>
-    </ng-template>
-  </ListView>
-</GridLayout>
+<StackLayout class="form">
+
+  <StackLayout >
+    <Image width="100" src="https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"></Image>
+  </StackLayout>
+  <StackLayout class="input-field">
+    <TextField class="input"></TextField>
+  </StackLayout>
+  <StackLayout class="input-field">
+    <TextField class="input"></TextField>
+  </StackLayout>
+
+  <StackLayout class="input-field">
+    <TextField class="input"></TextField>
+  </StackLayout>
+
+  <Button text="Log In" class="btn btn-primary"></Button>
+</StackLayout>
